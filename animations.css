@@ -1,0 +1,7 @@
+@keyframes example {
+    0%   {rotate: 0;}
+    25%  {rotate: 30;}
+    50%  {rotate: 60;}
+    75%  {rotate: 90;}
+    100% {rotate: 180;}
+  }

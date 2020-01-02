@@ -1,0 +1,894 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	direction:ltr;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.f-left{
+	position: relative;
+	float: left;
+	margin-left: 5px;
+}
+.cdImages {
+	position: relative;
+	max-width:100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+a:link {
+	text-decoration: none;
+	color: none;
+  }
+  
+a:visited {
+	text-decoration: none;
+	color: none;
+  }
+a:hover {
+	text-decoration: none;
+	color: azure;
+  }
+a:active {
+	text-decoration: none;
+	color: none;
+  }
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	background-color:#FFF;
+	font-family:Arial, "Helvatica Neue", Helvatica, sans-serif;
+	line-height:1.5;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	text-align:center;
+	text-decoration:none;
+}
+h2{
+	line-height: 160%;
+}
+.bg-mygreen{
+	background-color: #009655;
+}
+#AllPage {
+    position: absolute;
+	display:block;
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+}
+#allContent{
+	position: relative;
+	display:block;
+	width: 80%;
+	background-color:rgba(0, 0, 0, 0.2);
+	margin:auto;
+}
+#pageHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+	width: 100%;
+    height: 45px;
+    background-color: #009655;
+	z-index: 50;
+}
+#pageHeaderContent{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	margin:auto;
+}
+#headerSearch{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	margin:auto;
+}
+.searchInput{
+	position: relative;
+	height: 80%;
+	width: 100%;
+	margin-top:5px;
+	text-align: center;
+	border-radius: 50px;
+	border:solid 3px darkcyan;
+}
+#headerLogo{
+	float: left;
+	width: 200px;
+	height: 100%;
+	background-color: darkmagenta;
+}
+.logoImg{
+	position: relative;
+	object-fit: fill;
+}
+  .headerButtons{
+	  position: relative;
+	  min-width: 100px;
+	  height: 100%;
+	  text-align: center;
+	  opacity: .7;
+	  margin-left: 15px;
+	  border:none;
+	  background :transparent;
+	  float: left;
+	  color: azure;
+  }
+  .headerUserButtons{
+	  position: relative;
+	  float: right;
+	  min-width: 100px;
+	  height: 100%;
+	  text-align: center;
+	  opacity: .7;
+	  border:none;
+	  background :transparent;
+	  margin-right: 10px;
+  }
+  .buttonsUnderline{
+	  position: relative;
+	  margin: auto;
+	  width: 0%;
+	  height: 2px;
+	  background-color: azure;
+	  transition-duration: .3s;
+  }
+  .headerButtons:hover{
+	opacity: 1;
+  }
+  .headerUserButtons:hover{
+	  opacity: 1;
+  }
+  .headerButtons:hover .buttonsUnderline{
+	width:100%;
+  }
+  .headerUserButtons:hover .buttonsUnderline{
+	width:100%;
+  }
+  .headerButtonsText{
+	position: relative;
+	color: azure;
+	text-align:center;
+	font-size: 16px;
+  }
+  #gamesUndermenu{
+	  position: relative;
+	  width: 100%;
+	  max-height: 650px;
+	  text-align: left;
+	  border:none;
+	  background :transparent;
+  }
+  .gamesUnderMenuButtons{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin-left: 10px;
+	text-align: left;
+	font-size: 14px;
+	border:none;
+	color: azure;
+	background :transparent;
+  }
+  .sliderImages{
+	max-height: 700px;
+	object-fit: cover;
+  }
+  .Content {
+    position:relative;
+	display:block;
+	min-height: 100vh;
+	height: auto;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:65px;
+	padding: 10px;
+  }
+  .contentTextBar{
+	  position: relative;
+	  margin-top: 25px;
+	  margin-bottom: 25px;
+	  width: 100%;
+	  height: 55px;
+	  background-color: none;
+  }
+  .contentText{
+	position: relative;
+	height: 100%;
+	width:80%;
+	margin:auto;
+	font-family: Arial, "Helvatica Neue", Helvatica, sans-serif;
+	color: azure;
+	text-align: center;
+  }
+  #popularContentAll {
+	position: relative;
+	margin:auto;
+	/*background-color:mediumpurple;*/
+  }
+  .popularContentItems{
+	position:relative;
+	height: 350px;
+	width: 350px;
+	float:left;
+	margin-left:20px;
+	margin:auto;
+	display: block;
+	/*background-color:mediumseagreen;*/
+  }
+  .popularContentItemsCD{
+	position:relative;
+	height: 100%;
+	width: 100%;
+	display: block;
+	border-radius: 100%;
+	background-color: silver;
+	transition-duration: .4s;
+}
+.popularContentCards{
+	float: left;
+	transition-duration: .4s;
+}
+.popularContentCards:hover{
+	transform: scale(1.15);
+	z-index: 5300;
+}
+
+.popularContentItems:hover .popularContentItemsCD{ 
+	margin-top:-60px;
+	transform: rotate(360deg);
+}
+  .popularContentItemsInfo{
+	  position: absolute;
+	  border-bottom-left-radius: 100%;
+	  border-bottom-right-radius: 100%;
+	  border-top-right-radius: 50px;
+	  border-top-left-radius: 50px;
+	  height: 30%;
+	  width: 100%;
+	  bottom: 0;
+	 left: 0;
+	 background-color:#009655;
+	 box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 40px 20px 0 rgba(0, 0, 0, 0.19);
+	 color: azure;
+  }
+  .popularGamesHeadText{
+	color:azure;
+	line-height: 160%;
+	font-size: x-large;
+  }
+  .popularGamesEditionText{
+	  color:#ebebeb;
+	  font-size: 14px;
+  }
+  .popularGamesPrizeText{
+	  color:azure;
+	  font-weight: bold;
+	  font-size: 24px;
+  }
+  #bestSellersContentAll{
+	position:relative;
+	/*background-color:tomato;*/
+  }
+  #bestSellersItems{
+	position:relative;
+	display: block;
+	height: 100%;
+	width: 250px;
+	margin-left:15px;
+	border-radius: 5%;
+	float: left;
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5));
+	background-color:darkslateblue;
+	transition-duration: .3s;
+  }
+  #bestSellersItems:hover{ 
+	transform: scale(1.15);
+	z-index: 5300;
+}
+#bestSellersItemsInfo{
+	position: absolute;
+	height: 70px;
+	width: 100%;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius:5%;
+	background-color: khaki;
+	bottom: 0;
+}
+#mainContentAll{
+	position: relative;
+	height: auto;
+	margin: auto;
+}
+
+#mainContentItems{
+	position:relative;
+	display: block;
+	height: 325px;
+	width: 17.1%;
+	margin-left:15px;
+	margin-top:15px;
+	border-radius: 5%;
+	float: left;
+	z-index: 5;
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5));
+	background-color:royalblue;
+	transition-duration: .3s;
+} 
+#mainContentItemsInfo{
+	position: absolute;
+	height: 70px;
+	width: 100%;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius:5%;
+	background-color: maroon;
+	z-index: 100;
+	bottom: 0;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 40px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sliderPreviusBtn{
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #009655;
+	line-height: 50px;
+	color: white;
+}
+.sliderNextBtn{
+	position: relative;
+	float: right;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #009655;
+	line-height: 50px;
+	color: white;
+}
+.gamesTitleText{
+	text-align: left;
+	color:azure;
+	font-size: 16px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+.gamesPlatformText{
+	text-align: left;
+	color:#ebebeb;
+	font-size: 12px;
+}
+.gamesPrizeText{
+	text-align: left;
+	color:azure;
+	font-weight: bold;
+	font-size: 18px;
+}
+.f-Right{
+	float: right;
+}
+#gamesPageContent{
+	position: relative;
+	width: 100%;
+	height: auto;
+
+}
+#gamesFilterMenu{
+	position: relative;
+	height: 40px;
+	width:100%;
+}
+#gamesFilterSearch{
+	position: relative;
+	height: 75%;
+	margin:5px;
+	width: 25%;
+	float: right;	
+}
+.filterText{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-size: large;
+}
+.underLine{
+	position: relative;
+	width: 95%;
+	margin: auto;
+	height: 2px;
+	background-color: azure;
+}
+#gamesContent{
+	position: relative;
+	height: auto;
+	width: 80%;
+	margin:auto;
+	margin-top: 100px;
+
+}
+.gamesNavbarButtons{
+	background-color: green;
+}
+.cardsAllButton{
+	background:transparent; 
+	border:none;
+}
+.cardsAll{
+	margin: 12px;
+	height: 375px;
+	width: 225px;
+	background-color:#009655;
+	border-radius: 5px;
+	background:linear-gradient(to top, rgba(40, 201, 80, 0.336), rgb(68, 209, 92));
+	transition-duration: .3s;
+	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 10px 0 rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+}
+.cardsAll:hover{
+	transform: scale(1.15);
+	z-index: 5300;
+}
+.cardsImg{
+	position: relative;
+	height: 78%;
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+}
+.cardsBody{
+	position: relative;
+	width: 100%;
+	height: 22%;
+	padding: 8px;
+	overflow: hidden;
+}
+#gamePageAllContent{
+	width: 80%;
+	height: 1500px;
+	margin: auto;
+	background-color: #646464;
+}
+
+#gameInfoAll{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 45px;
+	background-color:darkorange;
+}
+#gameImg{
+	position: relative;
+	width: 30%;
+	float: left;
+}
+#gameInfo{
+	position: relative;
+	width: 70%;
+	background-color: darkslateblue;
+	padding: 50px;
+	text-align: left;
+}
+.gameInfoTitle{
+	position: relative;
+	text-align: left;
+	font-size: 50px;
+	width:auto;
+	color: white;
+
+}
+.gameInfoPlatform{
+	position: relative;
+	text-align: left;
+	font-size: 25px;
+	color: white;
+}
+.gameInfoAbout{
+	position: relative;
+	margin-top: 15px;
+	text-align: left;
+	font-size: 16px;
+	max-width: 450px;
+	overflow-wrap: break-word;
+	color: whitesmoke;
+}
+.gameInfoBuyButton{
+	position: relative;
+}
+.sliderItemsContent{
+	height:425px;
+	margin-top:15px;
+}
+#gameRating{
+	position: relative;
+	width: auto;
+	height: 75px;
+	margin:20px;
+	font-size: xx-large;
+	line-height: 75px;
+}
+#howManyRate{
+	position: relative;
+	font-size: small;
+	color: #ebebeb;
+	float: left;
+}
+#addBasketButton{
+	position: relative;
+	float: right;
+	margin-bottom: 35px;
+	width: 250px;
+	height: 70px;
+	color: azure;
+	font-size: xx-large;
+	line-height: 65px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#addBasketButton:hover #addBasket{
+	width:100%;
+}
+#addBasket
+{
+	position: relative;
+	float: right;
+	width: 30%;
+	height: 100%;
+	border-radius: 7px;
+	transition-duration: .5s;
+	background-color:rgb(62, 152, 255);
+	overflow: hidden;
+}
+#basketPrize{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #009655;
+	color: white;
+	font-size: 30px;
+	line-height: 70px;
+	overflow: hidden;
+}
+#recomContent{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: red;
+}
+#gamesFilterBar{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #009655;
+	color: white;
+}
+#allComments{
+	position: relative;
+	margin: auto;
+	width: 70%;
+	height: auto;
+}
+.userCommentsCards{
+	float: left;
+	margin: 10px;
+	max-width: 20rem;
+	background-color: #009655;
+}
+.loginModalInputs{
+	width: 98%;
+	text-align: left;
+	margin: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.registerInputs{
+	margin-bottom: 10px;
+}
+.dropDownCartAll{
+	position: absolute;
+	left:-10vh;
+	width: 40vh;
+	overflow-y: auto;
+	max-height: 82vh;
+}
+.cartItemInfo{
+	position: relative;
+	float: left;
+	width: auto;
+	height: auto;
+	padding: 10px;
+}
+.cartItems{
+	position: relative;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100px;
+	/*border-style: solid;
+	border-width: 0px 0px 2px 0px ;
+	border-color: #009655;*/
+}
+.cartItemTitle{
+	position: relative;
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	width: 100%;
+	height: auto;
+	overflow-wrap: break-word;
+	text-overflow: ellipsis;
+}
+.cartItemsPlatform{
+	position: relative;
+	color: black;
+	text-align: left;
+	font-size: 15px;
+}
+.cartItemPrize{
+	position: relative;
+	color: black;
+	text-align: left;
+	font-size: 18px;
+}
+.navbarWidth{
+	position: relative;
+	max-width: 80%;
+	margin:auto;
+}
+#myCartPageContent{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.myCartTitle{
+	position: relative;
+	width: auto;
+	height: 40px;
+	margin-top: 75px;
+	margin-left: 100px;
+	color: white;
+	font-size: 25px;
+	text-align: left;
+}
+#myCart{
+	position: relative;
+	width: 60%;
+	height: auto;
+	float: left;
+	margin-left: 100px;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px ;
+	border-color: #009655;
+	padding: 5px;
+}
+#loginModalTitle{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #009655;
+	color: white;
+	padding: 10px;
+}
+.cartItemButton{
+	position: relative;
+	width: 28px;
+	height: 28px;
+	background-color: royalblue;
+	border: none;
+	border-radius: 100%;
+	color: white;
+}
+.cartCardsAll{
+	margin: 12px;
+	height: 375px;
+	width: 225px;
+	background-color:#009655;
+	border-radius: 5px;
+	background:linear-gradient(to top, rgba(30, 214, 76, 0.384), rgb(68, 209, 92));
+	transition-duration: .3s;
+	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 10px 0 rgba(0, 0, 0, 0.19);
+}
+#cartRightMenu
+{
+	position: fixed;
+	min-width: 20%;
+	width: auto;
+	max-width: 55vh;
+	max-height: 100%;
+	float: right;
+	right: 0px;
+	margin-top: 50px;
+	margin-right: 50px;
+	background-color: #009655;
+	padding: 10px;
+}
+@media only screen and (max-width:567px)
+{
+ #cartRightMenu{
+	 position: relative;
+	 float: none;
+	 right: none;
+	margin:auto;
+ }
+}
+.cartRightMenuTitle{
+	width: 100%;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+}
+#cartRightMenuItemsContent{
+	width:90%;
+	height: auto;
+	padding: 15px;
+	margin-top: 25px;
+	margin-left:auto;
+	margin-right:auto;
+	border-color: #ebebeb;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px ;
+}
+#cartCreditCardsAll{
+	position: relative;
+	width: 95%;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	padding: 10px;
+}
+.cartCreditCards{
+	position: relative;
+	width: 165px;
+	height: 100px;
+	border-radius: 5px;
+	background-color: blue;
+	float: left;
+	margin-left: 10px;
+}
+.cartRightMenuItemsText{
+	color: white;
+	font-size: 18px;
+	text-align: left;
+}
+.cartTotalPrize{
+	width:90%;
+	height: auto;
+	padding: 15px;
+	color: white;
+	font-size: 18px;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+}
+.cartCreditCardInputs{
+	width: 90%;
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#userProfileContent{
+	position: relative;
+	width: 80%;
+	min-height: 100%;
+	margin-top: 55px;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 10px;
+}
+.myGamesTitle{
+	position: relative;
+	color: white;
+	margin-bottom: 5px;
+	font-size: xx-large;
+	text-align: center;
+}
+.gameCodeText{
+	color:azure;
+	font-size: 12px;
+	text-align: left;
+}
+.adminPaneladd{
+	position: relative;
+	margin-top: 20px;
+	width: 500px;
+	height: auto;
+	padding: 15px;
+	background-color: #009655;
+	border-radius: 5px;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 40px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.adminPanelTitle{
+	color: azure;
+	font-size: 20px;
+	margin: 10px;
+	text-align: left;
+	float: left;
+}
+#searchCompleteAll{
+	position: absolute;
+	top:50px;
+	margin: auto;
+	width: 40%;
+	height: 500px;
+	background-color: azure;
+	z-index: 100;
+	border-radius: 7px;
+	padding: 5px;
+}
+.searchCompleteItems{
+	position: relative;
+	height: 50px;
+	width: 80%;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 50px;
+	font-size: large;
+	color: black;
+	text-align: left;
+	background-color: blanchedalmond;
+	list-style-type: none;
+	list-style-position: inside;
+}
+.ratingStar{
+	color: darkorange;
+}
+.myGamesCardHover{
+	position: relative;
+	width: 100%;
+	height: 0%;
+	display: none;
+	transition-duration: .4s;
+}
+.cardsAll:hover .myGamesCardHover{
+	height: 100%;
+	display: block;
+}
+.myGameCardHoverKey{
+	position: relative;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 12px;
+	font-style: bold;
+	color: white;
+	transition-duration: .4s;
+	cursor: pointer;
+}
+.myGameCardHoverKey:hover{
+	transform: scale(1.15);
+	color: darkorange;
+}
+.myGamesCardButtons{
+	position: relative;
+	width: 100px;
+	font-size: 10px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.commentButton{
+	position: relative;
+	margin-top:20px;
+	border: none;
+}
+
